@@ -148,3 +148,51 @@ function stringReverse(text) {
 }
 let love = 'i love you'
 // console.log(stringReverse(love))
+
+// Calculate wood requerment
+function quantity(chair, table, bad) {
+    const chairWood = 3;
+    const tableWood = 10;
+    const badWood = 50;
+
+    // calculate 
+    let chairQuantity = chair * chairWood;
+    let tableQuantity = table * tableWood;
+    let badQuantity = bad * badWood
+    let total = chairQuantity + tableQuantity + badQuantity;
+
+    return total
+}
+// console.log(quantity(1, 1, 1))
+
+// Find chepest phone from array of object 
+const phones = [
+    { name: 'nokia', price: 1000, quantit: 1 },
+    { name: 'sumsang', price: 2000, quantit: 2 },
+    { name: 'oppo', price: 3000, quantit: 3 },
+    { name: 'walton', price: 4000, quantit: 4 }
+];
+
+// Find chepest phone from array of object 
+function chepestPhone(phones) {
+    let chepest = phones[0]
+    for (const phone of phones) {
+        if (phone.price < chepest.price) {
+            chepest = phone
+        }
+    }
+    return chepest
+}
+
+// console.log(chepestPhone(phones))
+
+// Calculate Total quantity product price 
+function totalPrice(produtcs) {
+    let produc = 0;
+    for (const product of produtcs) {
+        let totalCost = product.price * product.quantit
+        produc = produc + totalCost
+    }
+    return produc
+}
+// console.log(totalPrice(phones))
