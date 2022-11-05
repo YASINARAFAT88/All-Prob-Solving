@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Add Your Comment</h4>
+    <div id="comment">
+        <p id="secret">Set Comment</p>
+    </div>
+    <textarea name="" id="commment-box" cols="30" rows="4"></textarea>
+    <br> <button id="post">delete</button>
+    <script>
+        document.getElementById('post').addEventListener('click', function () {
+            const p = document.getElementById('secret')
+            p.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>
