@@ -1,69 +1,74 @@
-// var alia;
+// var number = 39
+let string = 'dmwj'
+const boolean = true;
 
-// alia = 880
-// if (alia < 50) {
-//     console.log('grade F');
-// }
-// else if (alia <= 60 && alia >= 50) {
-//     console.log('grade D');
-// }
-// else if (alia >= 60 && alia <= 70) {
-//     console.log('grade C');
-// }
-// else if (alia >= 70 && alia <= 80) {
-//     console.log('grade B');
-// }
-// else if (alia >= 80 && alia <= 90) {
-//     console.log('grade A+');
-// }
-// else {
-//     console.log('G+ Golden')
-// }
-// var signal;
-// signal = 'yellow'
-// if (signal == 'rad') {
-//     console.log('Danger')
-// }
-// else if (signal == 'yellow') {
-//     console.log('Stop')
-// }
-// else if (signal == 'green') {
-//     console.log('jete paro')
-// }
-// var roast = 1
-// while (roast <= 20) {
-//     console.log(roast)
-//     roast = roast + 2
-// }
-// var num = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-// for (var i = 0; i < num.length; i++) {
-//     var element = num[i]
-//     console.log(element)
-// }
-
-// var work = [0, 1, 2, 3, 4, 5, 6, 7, 8, "yain",];
-// for (var i = 0; i < work.length; i++) {
-//     var store = work[i];
-//     console.log(store)
-// }
-// function givenSingara(params) {
-//     var singaraPrice = 10
-//     var singaraQuanity = params / singaraPrice
-//     // console.log(singaraQuanity)
-//     return singaraQuanity
-// }
-// var singara = givenSingara(500)
-
-// console.log(singara)
-function addTwoNum(num1, num2) {
-    var total = num1 / num2
-    return parseInt(total)
+let num = 5
+let num2 = 4
+let res = num % num2
+// console.log(res)
+if (num >= num2) {
+    // console.log(true)
 }
-var number = addTwoNum(28, 5)
-console.log(number)
+let number = 7
+while (number < 19) {
+    number++
+    // console.log(number)
+}
+let array = [32, 45, 76, 78, 12, 56, 78];
+array[4] = 13
+// console.log(array.indexOf(13))
 
+function multiplication(num1, num2, num3) {
+    let result = num1 * num2 * num3
+    return result
+}
+// console.log(multiplication(5, 3, 4))
+let obj = { book: 'monjhumir', pages: 360, writer: 'shondhi' }
+obj.writer = 'yasin'
+// console.log(obj)
 
+function feetToInch(feet) {
+    let inches = feet * 12
+    return inches
+}
+// console.log(feetToInch(3))
+function centimeterTometer(centimeter) {
+    let miter = centimeter / 100
+    return miter;
 
+}
+// console.log(centimeterTometer(1400))
+function pageCount(page1, page2, page3) {
+    let bookOne = 100;
+    let bookTwo = 200;
+    let bookThree = 300;
 
+    // calculate
+    let page1Book = page1 * bookOne;
+    let page2Book = page2 * bookTwo;
+    let page3Book = page3 * bookThree;
+    let totalpages = page1Book + page2Book + page3Book;
+    return totalpages
+}
+// console.log(pageCount(2, 3, 4))
 
+let friendName = ['yasin', 'foysal ahmed', 'hamza', 'uddinn shahaa']
+function longString(arr) {
+    let longest = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longest.length) {
+            longest = arr[i]
+        }
+    }
+    return longest
+}
+// console.log(longString(friendName))
 
+let nagetive = [21, 32, 54, 76, 89, 90, 54, 34];
+for (let i = 0; i < nagetive.length; i++) {
+    let num = []
+    if (nagetive[i] === -4) {
+        num = nagetive
+    }
+    console.log(num)
+}

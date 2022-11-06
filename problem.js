@@ -48,4 +48,4 @@ function oddFriend(list) {
     return oddFr;
 }
 var friend = ['foysal', 'asa', 'arafat', 'ahmed'];
-console.log(oddFriend(friend))
+// console.log(oddFriend(friend))

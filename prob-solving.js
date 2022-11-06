@@ -196,3 +196,43 @@ function totalPrice(produtcs) {
     return produc
 }
 // console.log(totalPrice(phones))
+
+// Jungle Animal Counts 
+function animalCount(miles) {
+    const first10Miles = 10;
+    const second10Miles = 50;
+    const third10Miles = 100;
+    if (miles <= 10) {
+        let first10 = miles * first10Miles;
+        return first10
+    }
+    else if (miles <= 20) {
+        const firstDensAnimale = 10 * first10Miles;
+        const restSecond = miles - 10;
+        const secondDenseAnimal = restSecond * second10Miles;
+        const totalAnimal = firstDensAnimale + secondDenseAnimal;
+        return totalAnimal
+    }
+    else {
+        const firstDensAnimale = 10 * first10Miles;
+        const secondDensAnimale = 10 * second10Miles;
+        const restSecond = miles - 20;
+        const thirdDenseAnimal = restSecond * third10Miles
+        const totalAnimal = thirdDenseAnimal + firstDensAnimale + secondDensAnimale;
+        return totalAnimal
+    }
+}
+// console.log(animalCount(30))
+
+// Find Longest String in Array 
+let friendName = ['yasin', 'foysal ahmed', 'hamza', 'uddinn shahaa']
+function longString(arr) {
+    let longest = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longest.length) {
+            longest = arr[i]
+        }
+    }
+    return longest
+}
+// console.log(longString(friendName))
