@@ -236,3 +236,138 @@ function longString(arr) {
     return longest
 }
 // console.log(longString(friendName))
+
+//Assignment Complate
+
+function anaToVori(ana) {
+    var vori = ana / 16
+    return vori
+}
+// console.log(anaToVori(64))
+
+function pandaCost(shing, shomu, gila) {
+    var shingara = shing * 7
+    var shomucha = shomu * 10
+    var gilapi = gila * 15
+    // calculate
+    var total = shingara + shomucha + gilapi
+    return total
+}
+// console.log(pandaCost(2, 2, 2))
+
+function picnicBudget(num) {
+    var first100 = 5000
+    var second200 = 4000
+    var third200 = 3000
+    if (num <= 100) {
+        var first100people = num * first100
+        return first100people
+    } else if (num <= 200) {
+        var first100people = 100 * first100
+        var firstRest = num - 100
+        var second200People = firstRest * second200
+        var restPeople = second200People + first100people
+        return restPeople
+    } else if (num <= 300) {
+        var first100people = 100 * first100
+        var second200People = 100 * second200
+        var firstRest = num - 200
+        var rest = firstRest * third200
+        var total = first100people + second200People + rest
+        return total
+    }
+}
+// console.log(picnicBudget(204))
+function oddFriend(list) {
+    let oddFr = [];
+    for (let i = 0; i < list.length; i++) {
+        const len = list[i].length;
+        if (len % 2 !== 0) {
+            oddFr.push(list[i]);
+        }
+    }
+    return oddFr;
+}
+var friend = ['foysal', 'asa', 'arafat', 'ahmed'];
+// console.log(oddFriend(friend))
+
+//-----New Problem Concetual---------
+
+// Count Vowel in string 
+function countVowel(string) {
+    let count = 0
+    for (let i = 0; i < string.length; i++) {
+        let letter = string[i];
+        if (letter == 'a' || letter == "e" || letter == "i" || letter == "o" || letter == "u")
+            count = count + 1
+    }
+    return count
+}
+let word = 'hello im yasin arafat'
+// console.log(countVowel(word))
+
+//Mular kg count price per kg + Error Handle
+function mularKg(quantity) {
+    if (typeof quantity != 'number') {
+        return 'plz input valied quantity'
+    }
+    let price = 0;
+    if (quantity <= 2) {
+        price = quantity * 30;
+    } else {
+        price = quantity * 25;
+    }
+    return price
+}
+// console.log(mularKg(3))
+
+// Electricity Bill Count 
+function elctricityBill(unit) {
+    let bill = 0;
+    if (unit <= 100) {
+        bill = unit * 5
+    } else if (unit <= 200) {
+        let firstBill = 100 * 5
+        let remaining = (unit - 100) * 6;
+        bill = remaining + firstBill
+    } else if (unit > 200) {
+        let firstBill = 100 * 5
+        let secondBill = 100 * 6
+        let remaining = (unit - 200) * 7;
+        bill = remaining + firstBill + secondBill
+    }
+    return bill
+}
+// console.log(elctricityBill(300))
+
+//Find 80+ in Array
+function find80Plus(mark) {
+    if (Array.isArray(mark) != true) {
+        return 'plz input array'
+    }
+    for (let i = 0; i < mark.length; i++) {
+        let element = mark[i]
+        if (element >= 80) {
+            return true
+        }
+    }
+    return false;
+}
+// console.log(find80Plus([21, 43, 80]))
+
+//Find Second Largest Number in Array Perfectly
+function secondLargest(number) {
+    let largest = 0;
+    let secondlarge = 0;
+    for (let i = 0; i < number.length; i++) {
+        let element = number[i]
+        if (element > largest) {
+            secondlarge = largest
+            largest = element
+        } else if (element > secondlarge) {
+            secondlarge = element
+        }
+    }
+    return secondlarge
+}
+// console.log(secondLargest([21, 34, 56, 87, 97, 89, 95]))

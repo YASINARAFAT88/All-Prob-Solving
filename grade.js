@@ -65,10 +65,14 @@ function longString(arr) {
 // console.log(longString(friendName))
 
 let nagetive = [21, 32, 54, 76, 89, 90, 54, 34];
-for (let i = 0; i < nagetive.length; i++) {
-    let num = []
-    if (nagetive[i] === -4) {
-        num = nagetive
+function plusThirtFive(number) {
+    let count = []
+    for (let i = 0; i < number.length; i++) {
+        let num = nagetive[i]
+        if (num[i] > 35) {
+            count.push(num)
+        }
     }
-    console.log(num)
+    return count
 }
+console.log(plusThirtFive(nagetive))
