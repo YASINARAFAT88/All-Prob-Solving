@@ -1,3 +1,4 @@
+// 1
 function inchecToFeet(inches) {
     var feet = inches / 12
     return feet
@@ -5,6 +6,7 @@ function inchecToFeet(inches) {
 var books = inchecToFeet(36)
 // console.log(books)
 
+// 2
 function kmTomiles(miles) {
     var km = miles * 1.60934;
     return km
@@ -12,6 +14,8 @@ function kmTomiles(miles) {
 
 var km = kmTomiles(2)
 // console.log(km)
+
+// 3
 function eventNumber(year) {
     if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
         return true
@@ -19,6 +23,8 @@ function eventNumber(year) {
     return false
 }
 // console.log(eventNumber(2024))
+
+// 4
 function getFect(num) {
     var fect = 1;
     for (var i = 1; i <= num; i++) {
@@ -28,6 +34,7 @@ function getFect(num) {
 }
 // console.log(getFect(9))
 
+// 4.2
 // Fectorial Reverse 
 function getFectRev(num) {
     let fecto = 1;
@@ -37,14 +44,16 @@ function getFectRev(num) {
     return fecto
 }
 // console.log(getFectRev(7))
-let myNum = 5.3434;
 
+// 5
+// Ludo Code
 for (let i = 0; i <= 20; i++) {
     const output = Math.random() * 6;
     let random = Math.round(output)
     // console.log(random)
 }
 
+// 6
 // Find Largest Number 
 function largestNum(num1, num2, num3) {
     var large = Math.min(num1, num2, num3)
@@ -53,6 +62,7 @@ function largestNum(num1, num2, num3) {
 
 // console.log(largestNum(23, 43, 65))
 
+// 7
 // All Number Jog fol in Array 
 function sumNum(numbers) {
     let sum = 0;
@@ -65,6 +75,7 @@ function sumNum(numbers) {
 let num = sumNum([23, 34, 21])
 // console.lo
 
+// 8
 // Find Largest number In Array 
 function findLargest(numbers) {
     let largest = numbers[0];
@@ -80,6 +91,7 @@ const larg = [3, 34, 23, 56]
 const output = findLargest(larg)
 // console.log(output)
 
+// 9
 // find Array Second Largest Number 
 function findSecondLargestElem(arr) {
     let first = -1, second = -1;
@@ -97,6 +109,7 @@ function findSecondLargestElem(arr) {
 let arr = [12, 35, 1, 10, 34, 1]
 // console.log(findSecondLargestElem(arr))
 
+// 10
 // fibonacchi seriese
 function fiboSeries(num) {
     if (typeof num != 'number') {
@@ -117,6 +130,7 @@ const ar = 'sx'
 
 //--------- 11 No Problem -------------------
 
+// 11
 // Remove Array Duplicate element 
 function romoveDuplicate(number) {
     let unique = [];
@@ -130,6 +144,7 @@ function romoveDuplicate(number) {
 const duplicate = [12, 34, 56, 78, 09, 12, 34, 56, 78]
 // console.log(romoveDuplicate(duplicate))
 
+// 12
 // Choose One for me 
 function chooseOne(items) {
     var item = items[Math.round(Math.random() * items.length)];
@@ -138,6 +153,7 @@ function chooseOne(items) {
 let bookName = ['monjhumir', 'moddahubela', 'sedin', 'amoni', 'srabon-chilo']
 // console.log(chooseOne(bookName))
 
+// 13
 // String Reverse 
 function stringReverse(text) {
     let string = '';
@@ -149,6 +165,7 @@ function stringReverse(text) {
 let love = 'i love you'
 // console.log(stringReverse(love))
 
+// 14
 // Calculate wood requerment
 function quantity(chair, table, bad) {
     const chairWood = 3;
@@ -165,6 +182,7 @@ function quantity(chair, table, bad) {
 }
 // console.log(quantity(1, 1, 1))
 
+// 15
 // Find chepest phone from array of object 
 const phones = [
     { name: 'nokia', price: 1000, quantit: 1 },
@@ -172,7 +190,7 @@ const phones = [
     { name: 'oppo', price: 3000, quantit: 3 },
     { name: 'walton', price: 4000, quantit: 4 }
 ];
-
+// 15
 // Find chepest phone from array of object 
 function chepestPhone(phones) {
     let chepest = phones[0]
@@ -186,6 +204,7 @@ function chepestPhone(phones) {
 
 // console.log(chepestPhone(phones))
 
+// 16
 // Calculate Total quantity product price 
 function totalPrice(produtcs) {
     let produc = 0;
@@ -197,6 +216,7 @@ function totalPrice(produtcs) {
 }
 // console.log(totalPrice(phones))
 
+// 17
 // Jungle Animal Counts 
 function animalCount(miles) {
     const first10Miles = 10;
@@ -224,6 +244,7 @@ function animalCount(miles) {
 }
 // console.log(animalCount(30))
 
+// 18
 // Find Longest String in Array 
 let friendName = ['yasin', 'foysal ahmed', 'hamza', 'uddinn shahaa']
 function longString(arr) {
@@ -239,12 +260,14 @@ function longString(arr) {
 
 //Assignment Complate
 
+// 19
 function anaToVori(ana) {
     var vori = ana / 16
     return vori
 }
 // console.log(anaToVori(64))
 
+// 20
 function pandaCost(shing, shomu, gila) {
     var shingara = shing * 7
     var shomucha = shomu * 10
@@ -255,6 +278,7 @@ function pandaCost(shing, shomu, gila) {
 }
 // console.log(pandaCost(2, 2, 2))
 
+// 21
 function picnicBudget(num) {
     var first100 = 5000
     var second200 = 4000
@@ -278,6 +302,8 @@ function picnicBudget(num) {
     }
 }
 // console.log(picnicBudget(204))
+
+// 22
 function oddFriend(list) {
     let oddFr = [];
     for (let i = 0; i < list.length; i++) {
@@ -293,6 +319,7 @@ var friend = ['foysal', 'asa', 'arafat', 'ahmed'];
 
 //-----New Problem Concetual---------
 
+// 23
 // Count Vowel in string 
 function countVowel(string) {
     let count = 0
@@ -306,6 +333,7 @@ function countVowel(string) {
 let word = 'hello im yasin arafat'
 // console.log(countVowel(word))
 
+// 24
 //Mular kg count price per kg + Error Handle
 function mularKg(quantity) {
     if (typeof quantity != 'number') {
@@ -321,6 +349,7 @@ function mularKg(quantity) {
 }
 // console.log(mularKg(3))
 
+// 25
 // Electricity Bill Count 
 function elctricityBill(unit) {
     let bill = 0;
@@ -340,6 +369,7 @@ function elctricityBill(unit) {
 }
 // console.log(elctricityBill(300))
 
+// 26
 //Find 80+ in Array
 function find80Plus(mark) {
     if (Array.isArray(mark) != true) {
@@ -355,6 +385,7 @@ function find80Plus(mark) {
 }
 // console.log(find80Plus([21, 43, 80]))
 
+// 27
 //Find Second Largest Number in Array Perfectly
 function secondLargest(number) {
     let largest = 0;
